@@ -1,16 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Books from '../Books/Books';
 import './Shop.css';
 
 const Shop = () => {
+    const [books, setBooks] = useState([]);
+    useEffect(() => {
+        fetch('Books.json')
+            .then(res => res.json())
+            .then(data => setBooks(data))
+
+    }, [])
+
     return (
-        <div className='shop-container'>
-            <div className='cart-container'>
-                <h1>Product-container</h1>
+        <div>
+            <h1>Hogwarts E-Library</h1>
+            <small>Quench Your Thirst Through Reading Books</small>
 
-            </div>
-            <div className='Products-container'>
-                <h1>Cart Container</h1>
-
+            <div className='shop-container'>
+                <div className='Products-container'>
+                    {
+                        books.map(book => <Books key={book.id}
+                            book={book}
+                        ></Books>)
+                    }
+                </div>
+                <div className='Cart-container'>
+                    <h1>Selected Books</h1>
+                </div>
             </div>
         </div>
     );

@@ -1,0 +1,45 @@
+.book {
+    width: 370px;
+    height: 500px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    /* padding: 10px; */
+    color: rgb(87, 86, 86);
+    position: relative;
+}
+
+.Book-info {
+    top: 0px;
+}
+
+
+.book img {
+    width: 350px;
+    height: 300px;
+    padding: 10px;
+}
+
+.btn-cart {
+    width: 100%;
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    position: absolute;
+    bottom: 0;
+
+}
+
+.btn-cart p {
+    color: rgb(59, 59, 59);
+    font-weight: 700;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.btn-cart:hover {
+    background-color: orange;
+}
