@@ -5,18 +5,22 @@ import './Books.css';
 
 
 const Books = (props) => {
-    const { id, price, picture, name } = props.book;
-    console.log(props.book);
+    const { handleAddToCart, book } = props;
+    const { id, price, picture, name } = book;
+
+
+
+    // console.log(props);
+    console.log(book);
     return (
         <div className='book'>
             <img src={picture} alt=''></img>
             <div className='Book-info'>
-
                 <h3>{name}</h3>
                 {/* <p>Product Id:{id}</p> */}
                 <p>Price: $ {price}</p>
             </div>
-            <button className='btn-cart'>
+            <button onClick={() => handleAddToCart(book)} className='btn-cart'>
                 <p>Add to Cart</p>
                 <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
             </button>
