@@ -11,7 +11,7 @@ const Books = (props) => {
 
 
     // console.log(props);
-    console.log(book);
+    // console.log(book);
     return (
         <div className='book'>
             <img src={picture} alt=''></img>
@@ -21,7 +21,7 @@ const Books = (props) => {
                 <p>Price: $ {price}</p>
             </div>
             <button onClick={() => handleAddToCart(book)} className='btn-cart'>
-                <p>Add to Cart</p>
+                <p>ADD TO CART</p>
                 <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
             </button>
         </div>

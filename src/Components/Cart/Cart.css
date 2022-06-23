@@ -1,0 +1,38 @@
+.cart {
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    color: rgb(70, 69, 69);
+
+
+}
+
+.cart-products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+
+}
+
+.cart-products img {
+    height: 50px;
+    width: 50px;
+    margin-right: 7px;
+}
+
+.cart-products h4 {
+    margin-right: 7px;
+}
+
+.cart-btn {
+    margin-top: 5px;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    padding: 15px;
+    color: rgb(85, 124, 7);
+    font-weight: 700;
+    font-size: 15px;
+    background-color: lightgrey;
+}
