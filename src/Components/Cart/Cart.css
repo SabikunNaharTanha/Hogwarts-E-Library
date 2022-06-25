@@ -31,8 +31,13 @@
     border-radius: 10px;
     width: 200px;
     padding: 15px;
-    color: rgb(85, 124, 7);
+    color: rgb(3, 110, 3);
     font-weight: 700;
     font-size: 15px;
     background-color: lightgrey;
+}
+
+.cart-btn:hover {
+    background-color: rgb(250, 175, 37);
+
 }
